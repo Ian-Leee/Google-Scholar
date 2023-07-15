@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base target="_blank">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th>author</th>
+            <th>publish Time</th>
+            <th>title</th>
+            <th> url </th>
+            <th>quotation_times</th>
+        </tr>
+        {% for value in data %}
+        <tr>
+            <td> {{ value["author"] }} </td>
+            <td> {{ value["publish Time "] }} </td>
+            <td> {{ value["title"] }} </td>
+            <td> {{ value["url"] }} </td>
+            <td> {{ value["quotation_times"] }} </td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td>Ian-李🍊🍀</td>
+            <td>帥氣程度：∞</td>
+            <td id="1">史上最帥的人</td>
+            <td>https://github.com/Ian-Leee/Google-Scholar.git</td>
+            <td>被引用次數 ∞次</td>
+        </tr>
+    </table>
+
+
+
+
+</body>
+
+</html>
